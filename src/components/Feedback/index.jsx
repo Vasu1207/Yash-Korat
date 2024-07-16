@@ -9,8 +9,8 @@ import { card } from './data';
 export default function Feedback() {
     return (
         <div className="fadein" >
-            <div className="flex justify-center " >
-                <div className="  md:py-[60px] bg-[#fafafa] rounded sm1:py-[40px] ex-sm1:py-[20px] container lg:pl-5 text-center " >
+            <div className="flex justify-center bg-[#fafafa] " >
+                <div className="  md:py-[60px]  rounded sm1:py-[40px] ex-sm1:py-[20px] container lg:pl-5 text-center " >
                     <p className="font-['Red_Rose'] font-bold md:text-[32px] md1:text-[26px] sm1:text-[20px] " >Positive Feedback from Past Clients</p>
                     <div className=" flex pt-8 sm1:px-4" >
 

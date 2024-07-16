@@ -47,10 +47,10 @@ export default function ContactUs() {
                                     <img width={"56px"} height={"56px"} className="ex-sm1:w-10 ex-sm1:h-10 " src={item.icon} alt="img" />
                                     <div>
                                         <div>
-                                            <p className="text-[#556070] xl:text-[20px] xl1:text-[18px] lg1:text-[20px] sm1:text-[18px] ex-sm1:text-[14px] font-normal font-['Red_Rose']" >{item.title}</p>
+                                            <p className="text-[#556070] sm:text-[16px] sm1:text-[18px] ex-sm1:text-[14px] font-normal font-['Red_Rose']" >{item.title}</p>
                                         </div>
-                                        <div className="pt-[6px]" >
-                                            <p className="text-[#132238] xl:text-[24px] xl1:text-[20px] lg1:text-[24px] sm1:text-[20px] ex-sm1:text-[16px] font-normal font-['Red_Rose'] " >{item.value}</p>
+                                        <div className="pt-[4px]" >
+                                            <p className="text-[#132238] sm:text-[20px] sm1:text-[20px] ex-sm1:text-[16px] font-normal font-['Red_Rose'] " >{item.value}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -149,8 +149,8 @@ export default function ContactUs() {
 
                         </div>
                         <div className="pt-8 flex justify-center " >
-                            <div className=" text-center content-center border border-solid border-[#1D90ED] rounded-[4px] w-[164px] h-[44px] " >
-                                <button className="text-[#1D90ED] font-normal text-base font-['Red_Rose']" >Submit</button>
+                            <div className=" text-center text-[#1D90ED] content-center hover:border-none hover:bg-[#1d90ed] hover:text-white border border-solid border-[#1D90ED] rounded-[4px] w-[164px] h-[44px] " >
+                                <button className=" font-normal text-base font-['Red_Rose'] " >Submit</button>
                             </div>
                         </div>
                     </div>

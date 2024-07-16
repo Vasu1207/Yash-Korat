@@ -7,8 +7,11 @@
 @tailwind utilities;
 
 .section {
-    font-size: 16px;
     font-weight: 500;
+}
+
+.active-section {
+    font-weight: 600;
 }
 
 .box {
@@ -89,4 +92,10 @@
 .fadein.visible {
     opacity: 1;
     transform: translate(0, 0);
+}
+
+.active-tab {
+    border: 1px solid #1D90ED;
+    background: #1D90ED14;
+    color: #1D90ED;
 }
