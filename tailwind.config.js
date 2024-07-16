@@ -12,6 +12,21 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      screens: {
+        '2xl1': { 'max': '1438px' },
+        'xl1': { 'max': '1279px' },
+        'lg1': { 'max': '1023px' },
+        'md1': { 'max': '767px' },
+        'sm1': { 'max': '639px' },
+        'ex-sm1': { 'max': '424px' },
+
+        'ex-sm': '425px',
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1439px',
+      }
     },
   },
   plugins: [],
