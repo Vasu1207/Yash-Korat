@@ -20,7 +20,7 @@ export default function Portfolio() {
         <div>
 
             <div className="lg1:fadein sm:pt-9 sm1:pt-6 animation flex justify-center">
-                <div className="l:px-[120px] xl1:px-[50px] container sm1:px-[20px] sm:py-12 sm1:py-8 ex-sm1:py-5">
+                <div className="l:px-[140px xl1:px-[50px] container sm1:px-[20px] sm:py-12 sm1:py-8 ex-sm1:py-5">
                     <Tabs selectedIndex={selectedIndex} onSelect={handleTabSelect}>
                         <div className="text-center grid gap-6">
                             <p className="font-bold text-[36px] lg1:text-[26px] sm1:text-[20px] font-['Red_Rose']">Portfolio Highlights</p>
@@ -48,47 +48,69 @@ export default function Portfolio() {
                         {info?.map((item, index) => (
                             <TabPanel key={item.id || index}>
                                 <div className="fadein flex justify-center">
-                                    <div className="md:pt-12 md1:pt-8">
-                                        <div className="xl:flex xl1:grid xl1:grid-cols-[40%_60%] lg1:grid-cols-none xl:gap-12 xl1:gap-2 items-center">
-                                            <div className="lg1:flex lg1:justify-center">
-                                                <img width={"300px"} height={"300px"} src={item.icon1} alt="" />
+                                    <div className="md:pt-12 md1:pt-8 md:flex md1:grid gap-[60px]">
+                                        <div className='relative group flex justify-center'>
+                                            <div className='rounded bg-[#121212]'>
+                                                <img className='group-hover:opacity-30 group-hover:blur-[1px]' src={item.img1} alt="" />
                                             </div>
-                                            <div className="xl:w-[724px] font-['Red_Rose'] py-[19px]">
-                                                <div>
-                                                    <p className="font-bold sm:text-[32px] sm1:text-[26px] text-[#1d90ed]">{item.title1}</p>
-                                                    <p className="pt-4 font-normal text-[16px] text-[#121212]">{item.text1}</p>
+                                            <div className='absolute top-[calc(50%-60px)] py-4 px-6'>
+                                                <div className='transition-opacity duration-300 opacity-0 group-hover:opacity-100'>
+                                                    <div className='bg-white bg-opacity-15 backdrop-blur-sm rounded-[60px] items-center flex justify-center h-[82px] w-[255px]'>
+                                                        <button className='font-["Red_Rose"] bg-[#1D90ED] rounded-[50px] z-1 text-white font-bold gap-8 text-[16px] pl-[16px] pr-1 py-1 items-center flex'>
+                                                            View Full Here
+                                                            <img src="icons/arrow-circle-right.png" alt="" />
+                                                        </button>
+                                                    </div>
                                                 </div>
-                                                <div className="pt-8">
-                                                    <button className="border border-solid border-[#1D90ED] hover:border-none hover:bg-[#1d90ed] hover:text-white rounded-[4px] text-[#1D90ED] font-normal gap-2 text-[16px] px-[7.5px] py-3 flex">
-                                                        <img src="logo/figma.png" alt="" />
-                                                        View Full Here
-                                                    </button>
+                                            </div>
+                                        </div>
+                                        <div className='relative group flex justify-center'>
+                                            <div className='rounded bg-[#121212]'>
+                                                <img className='group-hover:opacity-30 group-hover:blur-[1px]' src={item.img2} alt="" />
+                                            </div>
+                                            <div className='absolute top-[calc(50%-60px)] py-4 px-6'>
+                                                <div className='transition-opacity duration-300 opacity-0 group-hover:opacity-100'>
+                                                    <div className='bg-white bg-opacity-15 backdrop-blur-sm rounded-[60px] items-center flex justify-center h-[82px] w-[255px]'>
+                                                        <button className='font-["Red_Rose"] bg-[#1D90ED] rounded-[50px] z-1 text-white font-bold gap-8 text-[16px] pl-[16px] pr-1 py-1 items-center flex'>
+                                                            View Full Here
+                                                            <img src="icons/arrow-circle-right.png" alt="" />
+                                                        </button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="fadein flex justify-center">
-                                    <div className="md:pt-12 md1:pt-8">
-                                        <div className="lg1:grid items-center">
-                                            <div className="lg:hidden lg1:flex lg1:justify-center">
-                                                <img width={"300px"} height={"300px"} src={item.icon2} alt="" />
+                                <div className="fadein flex justify-center" >
+                                    <div className="md:pt-9 md1:pt-5 md:flex md1:grid gap-[60px]">
+                                        <div className='relative group flex justify-center'>
+                                            <div className='rounded bg-[#121212]'>
+                                                <img className='group-hover:opacity-30 group-hover:blur-[1px]' src={item.img3} alt="" />
                                             </div>
-                                            <div className="xl:flex xl1:grid xl1:grid-cols-[60%_40%] lg1:grid-cols-none lg1:gap-0 xl:gap-12 xl1:gap-2">
-                                                <div className="xl:w-[724px] font-['Red_Rose'] py-[19px]">
-                                                    <div>
-                                                        <p className="font-bold sm:text-[32px] sm1:text-[26px] text-[#1d90ed]">{item.title2}</p>
-                                                        <p className="pt-4 font-normal text-[16px] text-[#121212]">{item.text2}</p>
-                                                    </div>
-                                                    <div className="pt-8">
-                                                        <button className="border hover:border-none hover:bg-[#1d90ed] hover:text-white border-solid border-[#1D90ED] rounded-[4px] text-[#1D90ED] font-normal gap-2 text-[16px] px-[7.5px] py-3 flex">
-                                                            <img src="logo/figma.png" alt="" />
+                                            <div className='absolute top-[calc(50%-60px)] py-4 px-6'>
+                                                <div className='transition-opacity duration-300 opacity-0 group-hover:opacity-100'>
+                                                    <div className='bg-white bg-opacity-15 backdrop-blur-sm rounded-[60px] items-center flex justify-center h-[82px] w-[255px]'>
+                                                        <button className='font-["Red_Rose"] bg-[#1D90ED] rounded-[50px] z-1 text-white font-bold gap-8 text-[16px] pl-[16px] pr-1 py-1 items-center flex'>
                                                             View Full Here
+                                                            <img src="icons/arrow-circle-right.png" alt="" />
                                                         </button>
                                                     </div>
                                                 </div>
-                                                <div className="lg1:hidden xl1:grid xl1:justify-end">
-                                                    <img width={"300px"} height={"300px"} src={item.icon2} alt="" />
+                                            </div>
+                                        </div>
+
+                                        <div className='relative group flex justify-center'>
+                                            <div className='rounded bg-[#121212]'>
+                                                <img className='group-hover:opacity-30 group-hover:blur-[1px]' src={item.img4} alt="" />
+                                            </div>
+                                            <div className='absolute top-[calc(50%-60px)] py-4 px-6'>
+                                                <div className='transition-opacity duration-300 opacity-0 group-hover:opacity-100'>
+                                                    <div className='bg-white bg-opacity-15 backdrop-blur-sm rounded-[60px] items-center flex justify-center h-[82px] w-[255px]'>
+                                                        <button className='font-["Red_Rose"] bg-[#1D90ED] rounded-[50px] z-1 text-white font-bold gap-8 text-[16px] pl-[16px] pr-1 py-1 items-center flex'>
+                                                            View Full Here
+                                                            <img src="icons/arrow-circle-right.png" alt="" />
+                                                        </button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>

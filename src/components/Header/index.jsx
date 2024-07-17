@@ -22,7 +22,7 @@ function Navbar() {
                         </div>
                     </div>
                     <div className='hidden md:flex gap-8 items-center'>
-                        <div className='active-section'>HOME</div>
+                        <div className='active-section'>Home</div>
                         <div className='section'>Portfolio</div>
                         <div className='section'>Testimonial</div>
                     </div>
@@ -42,9 +42,12 @@ function Navbar() {
                     {/* Conditionally render sections for smaller screens based on state */}
                     {menuVisible && (
                         <div className='flex flex-col gap-6 pb-4 border-b right-1 border-solid absolute top-[69px] text-center w-full z-10 bg-white  items-center'>
-                            <div className='active-section'>HOME</div>
+                            <div className='active-section'>Home</div>
                             <div className='section'>Portfolio</div>
                             <div className='section'>Testimonial</div>
+                            <div className='md:hidden md1:block w-[164px] border border-solid border-[#1d90ed] hover:border-none hover:bg-[#1d90ed] rounded h-[44px] content-center hover:text-white text-[#1d90ed] text-center'>
+                                <button className='font-normal text-[16px] font-["Red_Rose"]'>Download CV</button>
+                            </div>
                         </div>
                     )}
                 </div>

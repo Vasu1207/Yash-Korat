@@ -17,7 +17,7 @@ export const card = [
     },
     {
         id: 3,
-        icon: "logo/logo3.png",
+        icon: "logo/logo5.png",
         profileTitle: "Adam Smith",
         profileText: "Web Designer at Airtable",
         reviewText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua quis nostrud exercitation ullamco",
@@ -25,7 +25,7 @@ export const card = [
     },
     {
         id: 4,
-        icon: "logo/logo4.png",
+        icon: "logo/logo6.png",
         profileTitle: "Adam Smith",
         profileText: "Web Designer at Airtable",
         reviewText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua quis nostrud exercitation ullamco",
