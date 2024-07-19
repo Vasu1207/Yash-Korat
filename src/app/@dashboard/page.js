@@ -7,6 +7,7 @@ import HeroSection from "@/components/Hero-section"
 import Portfolio from "@/components/Portfolio-highlights"
 import Work from "@/components/Work"
 import { useEffect, useState } from 'react';
+import Hotjar from '@hotjar/browser';
 import UAParser from 'ua-parser-js';
 
 
@@ -120,6 +121,10 @@ export default function Dashboard() {
 
     fetchIpAndInfo();
   }, []);
+
+  const siteId = 5060817;
+  const hotjarVersion = 6;
+  Hotjar.init(siteId, hotjarVersion);
 
   return (
     <div>
